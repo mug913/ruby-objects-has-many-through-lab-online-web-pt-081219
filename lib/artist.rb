@@ -28,7 +28,6 @@ class Artist
     self.songs.each do |song| 
       #binding.pry
       @genres << song.genre
-      @genres
     end 
   end 
   
