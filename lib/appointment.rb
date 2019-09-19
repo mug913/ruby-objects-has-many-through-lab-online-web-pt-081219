@@ -13,6 +13,7 @@ class Appointment
     @@all << self
   end 
   
+  attr_accessor :patient, :doctor, :date
   
   
 end 
