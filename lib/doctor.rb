@@ -12,8 +12,8 @@ class Doctor
   
   attr_accessor :name 
   
-  def new_appointment(patient, date)
-    new_app = Appointment.new(patient,self,date)
+  def new_appointment(date, patient)
+    new_app = Appointment.new(date,patient,self)
   end 
   
   def appointments 
