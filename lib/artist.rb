@@ -23,8 +23,8 @@ class Artist
   end
   
   def genres 
-  #  binding.pry
-    self.songs.each do |song| 
+    binding.pry
+    self.songs.map do |song| 
     song.genre
     end 
   end 
