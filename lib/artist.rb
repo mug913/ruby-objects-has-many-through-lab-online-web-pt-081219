@@ -12,7 +12,19 @@ class Artist
     new_song = Song.new(name, genre)
     @songs << new_song
     new_song.artist = self 
+  end 
+  
+  def songs 
+    Song.all.select do |song| 
+      song.artist == self
+    end 
   end
+  
+  def genres 
+    @songs.each do |song| 
+      song.genre 
+    end 
+  end 
   
   def self.all 
     @@all
