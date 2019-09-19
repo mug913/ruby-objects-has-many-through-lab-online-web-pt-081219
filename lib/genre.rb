@@ -20,8 +20,9 @@ class Genre
   end
   
     def artists
-    Artist.all.select do |artist.genres == @name|
-          artist
+    Artist.all.select do |artist| 
+      artist.genres == @name
+      binding.pry
      end
   end
 
