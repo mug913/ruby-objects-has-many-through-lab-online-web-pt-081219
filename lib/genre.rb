@@ -14,14 +14,15 @@ class Genre
   end
   
   def songs 
-    Songs.all.select do |song|
+    Song.all.select do |song|
       song.genre.name == @name 
     end
   end
   
-    def songs 
-    Songs.all.select do |song|
-      song.genre.name == @name 
+    def artists
+    Artist.all.select do |artist|
+      artist.genre.name == @name 
     end
   end
+
 end
