@@ -24,8 +24,7 @@ class Artist
   
   def genres 
       self.songs.map do |song| 
-      binding.pry
-    song.genre
+      song.genre
     end 
   end 
   
