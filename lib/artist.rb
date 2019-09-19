@@ -15,6 +15,7 @@ class Artist
     new_song = Song.new(name,self,genre)
     #@songs << new_song
     #binding.pry
+    @genres << genre
   end 
   
   def songs 
