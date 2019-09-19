@@ -20,7 +20,7 @@ class Genre
   end
   
     def artists
-    Artist.all.map do |artist| 
+    Artist.all.collect do |artist| 
       artist.genres == self
      end
   end
