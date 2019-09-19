@@ -24,6 +24,7 @@ class Artist
   end
   
   def genres 
+    binding.pry
     @songs.each do |song| 
       binding.pry
       @genres << song.genre
