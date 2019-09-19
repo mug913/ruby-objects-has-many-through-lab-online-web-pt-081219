@@ -21,7 +21,7 @@ class Genre
   
     def artists
     Artist.all.select do |artist|
-      artist.genrs.name == @name 
+      artist.genres.name == @name 
     end
   end
 
