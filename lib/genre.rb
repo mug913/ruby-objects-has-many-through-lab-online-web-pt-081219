@@ -20,11 +20,9 @@ class Genre
   end
   
     def artists
-    Artist.all.select do |artist|
-      if artist.genres == @name 
-        artist
-      end
-    end
+    Artist.all.select do |artist.genres == @name|
+          artist
+     end
   end
 
 end
