@@ -20,8 +20,8 @@ class Genre
   end
   
     def artists
-    Artist.all.collect do |artist| 
-      artist.genres == self
+    Artist.all.select do |artist| 
+      artist.genres.include?(self)
      end
   end
 
